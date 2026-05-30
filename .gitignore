@@ -1,0 +1,8 @@
+# Зависимости (НЕ коммитим). Собранные index.html и assets/ — коммитим!
+node_modules/
+
+# editor / os
+.DS_Store
+*.local
+.idea/
+.vscode/
