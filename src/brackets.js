@@ -4,7 +4,7 @@
 // (data-stl), а форма, размеры и отверстия считаются здесь. Деталь плоская и
 // лежит на сетке 15 мм, поэтому её достаточно описать набором ячеек 15×15.
 
-const BASE = import.meta.env.BASE_URL
+const STL_BASE = 'https://github.com/t-kaper/maketka/tree/main/3D_Models/STL/'
 const CELL = 15 // мм — шаг крепёжной сетки
 
 // ── палитра (повтор токенов из style.css, нужны как явные цвета в SVG) ──
@@ -65,23 +65,23 @@ function entry(file, kind, accent, name, geom) {
 
 const list = [
   // I — прямые, ширина 15 мм (лёгкая полоса)
-  entry('STL/br_15_30.STL', 'I', 'neon', 'I · 15×30', I(15, 30)),
-  entry('STL/br_15_45.STL', 'I', 'neon', 'I · 15×45', I(15, 45)),
-  entry('STL/br_15_60.STL', 'I', 'neon', 'I · 15×60', I(15, 60)),
+  entry('br_15_30.STL', 'I', 'neon', 'I · 15×30', I(15, 30)),
+  entry('br_15_45.STL', 'I', 'neon', 'I · 15×45', I(15, 45)),
+  entry('br_15_60.STL', 'I', 'neon', 'I · 15×60', I(15, 60)),
   // I — прямые, ширина 30 мм (жёсткая)
-  entry('STL/br_30.STL',    'I', 'neon', 'I · 30',    I(30, 30)),
-  entry('STL/br_30_30.STL', 'I', 'neon', 'I · 30×30', I(30, 30)),
-  entry('STL/br_30_45.STL', 'I', 'neon', 'I · 30×45', I(30, 45)),
-  entry('STL/br_30_60.STL', 'I', 'neon', 'I · 30×60', I(30, 60)),
-  entry('STL/br_30_90.STL', 'I', 'neon', 'I · 30×90', I(30, 90)),
+  entry('br_30.STL',    'I', 'neon', 'I · 30',    I(30, 30)),
+  entry('br_30_30.STL', 'I', 'neon', 'I · 30×30', I(30, 30)),
+  entry('br_30_45.STL', 'I', 'neon', 'I · 30×45', I(30, 45)),
+  entry('br_30_60.STL', 'I', 'neon', 'I · 30×60', I(30, 60)),
+  entry('br_30_90.STL', 'I', 'neon', 'I · 30×90', I(30, 90)),
   // Г — угол 90°, ширина 30 мм
-  entry('STL/br_L_60.STL',    'L', 'mag', 'Г · 60×60', L(60)),
+  entry('br_L_60.STL',    'L', 'mag', 'Г · 60×60', L(60)),
   // Т / ✕ — узлы
-  entry('STL/br_t_90_45.STL', 'T', 'mag', 'Т · 90/45', T(90, 45)),
-  entry('STL/br_x_90_90.STL', 'X', 'mag', '✕ · 90×90', X(90)),
+  entry('br_t_90_45.STL', 'T', 'mag', 'Т · 90/45', T(90, 45)),
+  entry('br_x_90_90.STL', 'X', 'mag', '✕ · 90×90', X(90)),
   // кв — квадратные
-  entry('STL/kr60_60.STL',    'I', 'neon', 'кв · 60×60',   I(60, 60)),
-  entry('STL/kr180_180.STL',  'I', 'neon', 'кв · 180×180', I(180, 180)),
+  entry('kr60_60.STL',    'I', 'neon', 'кв · 60×60',   I(60, 60)),
+  entry('kr180_180.STL',  'I', 'neon', 'кв · 180×180', I(180, 180)),
 ]
 
 export const CATALOG = Object.fromEntries(list)
@@ -152,7 +152,7 @@ function show(def) {
   if (name) name.textContent = def.name
   if (dims) dims.textContent = dimsText(def)
   if (dl) {
-    dl.setAttribute('href', `${BASE}3D_Models/${def.file}`)
+    dl.setAttribute('href', `${STL_BASE}${def.file}`)
     dl.classList.remove('hidden')
   }
 }

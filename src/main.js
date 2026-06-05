@@ -5,11 +5,12 @@ import { resources } from './i18n.js'
 import { initBrackets } from './brackets.js'
 
 const BASE = import.meta.env.BASE_URL // './' — пути относительные
+const STL_BASE = 'https://github.com/t-kaper/maketka/tree/main/3D_Models/STL/'
 
 // Ссылки на STL строим от base-пути, чтобы работало на /maketka/ и локально.
 function applyStlLinks() {
   document.querySelectorAll('[data-stl]').forEach((a) => {
-    a.setAttribute('href', `${BASE}3D_Models/${a.dataset.stl}`)
+    a.setAttribute('href', `${STL_BASE}${a.dataset.stl}`)
   })
 }
 

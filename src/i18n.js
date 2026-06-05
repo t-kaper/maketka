@@ -10,20 +10,20 @@ export const resources = {
 
       nav_idea: 'идея',
       nav_models: 'макеты',
-      nav_extras: 'расширители',
+      nav_extensions: 'расширения',
       nav_brackets: 'перемычки',
       nav_github: 'github ↗',
 
-      h1: 'Печатные <span class="text-neon">макеты</span>,<br class="hidden sm:block"> собранные как из <span class="text-mag">модулей</span>.',
-      intro: 'Часть мастерской tKaper — спокойный журнал с софт-консолью и киберпанк-тоном, а не стерильный продуктовый блог. <span class="text-slate-200">Breadboard Maketka</span> — модульная система плат и оснований с единой крепёжной сеткой <span class="text-neon">15&nbsp;мм</span>. Здесь лежат STL-файлы коннекторов для 3D-печати: три базовых размера, которые можно печатать по отдельности или наращивать боковыми шинами.',
+      h1: '<span class="text-neon">Maketka</span><br class="hidden sm:block">модульное решение для китайских макетных плат (<span class="text-mag">breadboard</span>).',
+      intro: '<span class="text-slate-200">Breadboard Maketka</span> — модульная система для стандартных макетных плат  с единой крепёжной сеткой <span class="text-neon">15&nbsp;мм</span>. Здесь лежат STL-файлы коннекторов для 3D-печати: три базовых размера, которые можно печатать по отдельности и наращивать друг с другом  боковушками и разными расширениями.',
 
       tag_stl: 'STL · 3D-печать',
       tag_sizes: '3 размера · S / M / L',
       tag_grid: 'сетка 15 мм',
       tag_modular: 'модульные шины',
 
-      models_h2: '// макеты',
-      models_hint: 'файлы — в <span class="text-neon">/3D_Models</span>',
+      models_h2: '// коннекторы',
+      models_hint: 'файлы — в <a class="text-neon" href="https://github.com/t-kaper/maketka/tree/main/3D_Models/STL">/3D_Models/STL</a>',
 
       small_title: 'Маленький',
       small_desc: 'S-коннектор <span class="text-dim">60 × 45 мм</span>. Базовый блок, печатается одной деталью, без шин.',
@@ -36,8 +36,8 @@ export const resources = {
 
       footer_note: '<span class="text-mag">#</span> Боковушка (шина) — одна деталь, печатается по 2 шт. на размер (M и L). У маленького макета шин нет.',
 
-      extras_h2: '// расширители',
-      extras_hint: 'нестандартные аксессуары',
+      extensions_h2: '// расширители',
+      extensions_hint: 'нестандартные расширения',
       dop_ugl_s_title: 'Угловой переходник S',
       dop_ugl_m_title: 'Угловой переходник M',
       dop_ugl_desc: 'Переходник для крепления платодержателя под углом через стандартные перемычки.',
@@ -65,12 +65,12 @@ export const resources = {
 
       nav_idea: 'idea',
       nav_models: 'models',
-      nav_extras: 'extras',
+      nav_extensions: 'extensions',    // было nav_extras
       nav_brackets: 'brackets',
       nav_github: 'github ↗',
 
-      h1: 'Printable <span class="text-neon">models</span>,<br class="hidden sm:block"> assembled out of <span class="text-mag">modules</span>.',
-      intro: 'Part of the tKaper workshop — a calm journal with a soft console and cyberpunk tone, not a sterile product blog. <span class="text-slate-200">Breadboard Maketka</span> is a modular system of boards and bases built on a single <span class="text-neon">15&nbsp;mm</span> mounting grid. Here you can find the connector STL files for 3D printing: three base sizes you can print on their own or extend with side bus strips.',
+      h1: '<span class="text-neon">Maketka</span><br class="hidden sm:block">a modular solution for Chinese breadboards (<span class="text-mag">breadboard</span>).',
+      intro: '<span class="text-slate-200">Breadboard Maketka</span> is a modular system for standard breadboards with a single <span class="text-neon">15&nbsp;mm</span> mounting grid. Here are the connector STL files for 3D printing: three base sizes that can be printed separately and extended with side strips and different extras.',
 
       tag_stl: 'STL · 3D printing',
       tag_sizes: '3 sizes · S / M / L',
@@ -78,7 +78,7 @@ export const resources = {
       tag_modular: 'modular bus strips',
 
       models_h2: '// models',
-      models_hint: 'files live in <span class="text-neon">/3D_Models</span>',
+      models_hint: 'files live in <a class="text-neon" href="https://github.com/t-kaper/maketka/tree/main/3D_Models/STL">/3D_Models/STL</a>',
 
       small_title: 'Small',
       small_desc: 'S-connector <span class="text-dim">60 × 45 mm</span>. Base block, printed as a single part, no bus strips.',
@@ -91,11 +91,11 @@ export const resources = {
 
       footer_note: '<span class="text-mag">#</span> The side strip (bus) is one part, printed 2× per size (M and L). The small model has no strips.',
 
-      extras_h2: '// extras',
-      extras_hint: 'non-standard accessories',
+      extensions_h2: '// extensions',
+      extensions_hint: 'non-standard extensions',
       dop_ugl_s_title: 'Angle adapter S',
       dop_ugl_m_title: 'Angle adapter M',
-      dop_ugl_desc: 'Adapter for mounting a plate holder at an angle via standard brackets.',
+      dop_ugl_desc: 'Adapter for mounting a plate holder at an angle via standard brackets',
 
       footer_copy: '© tKaper · workshop / digital garden',
       footer_build: 'build ok <span class="text-mag">·</span> stl ready',
