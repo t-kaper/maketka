@@ -9,7 +9,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   root: 'src',
   base: './',
-  publicDir: false,
+  publicDir: 'public',
   plugins: [tailwindcss()],
   build: {
     outDir: '../',

@@ -2,6 +2,7 @@ import './style.css'
 import i18next from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { resources } from './i18n.js'
+import { initBrackets } from './brackets.js'
 
 const BASE = import.meta.env.BASE_URL // './' — пути относительные
 
@@ -9,6 +10,14 @@ const BASE = import.meta.env.BASE_URL // './' — пути относитель�
 function applyStlLinks() {
   document.querySelectorAll('[data-stl]').forEach((a) => {
     a.setAttribute('href', `${BASE}3D_Models/${a.dataset.stl}`)
+  })
+}
+
+// Картинки макетов лежат в /models (корень репо), путь строим от base.
+// Чтобы поменять картинку — просто подмени файл models/<имя>.svg (или .png).
+function applyImgLinks() {
+  document.querySelectorAll('[data-img]').forEach((img) => {
+    img.setAttribute('src', `${BASE}models/${img.dataset.img}`)
   })
 }
 
@@ -34,6 +43,7 @@ function translate() {
 
   document.documentElement.lang = i18next.language.startsWith('ru') ? 'ru' : 'en'
   updateToggle()
+  document.dispatchEvent(new Event('i18n:changed'))
 }
 
 function bindToggle() {
@@ -61,6 +71,8 @@ i18next
   })
   .then(() => {
     applyStlLinks()
+    applyImgLinks()
     bindToggle()
     translate()
+    initBrackets()
   })
