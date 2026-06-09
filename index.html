@@ -20,15 +20,15 @@
   <header class="border-b border-line/70">
     <div class="mx-auto max-w-5xl px-5 py-4 flex items-center justify-between">
       <div class="flex items-center gap-2 text-sm">
-        <span class="text-neon">tKaper</span>
+        <span class="text-neon"> <a href="https://t-kaper.github.io">tKaper</a></span>
         <span class="text-dim">/</span>
-        <span class="text-slate-300">maketka</span>
+        <span class="text-slate-300"><a href="https://github.com/t-kaper/maketka">maketka</a></span>
       </div>
       <div class="flex items-center gap-4">
         <nav class="hidden sm:flex items-center gap-4 text-xs text-dim">
           <a href="#idea"     class="hover:text-neon transition" data-i18n="nav_idea"></a>
           <a href="#models"   class="hover:text-neon transition" data-i18n="nav_models"></a>
-          <a href="#extras"   class="hover:text-neon transition" data-i18n="nav_extras"></a>
+          <a href="#extensions"   class="hover:text-neon transition" data-i18n="nav_extensions"></a>
           <a href="#brackets" class="hover:text-neon transition" data-i18n="nav_brackets"></a>
           <a href="https://github.com/t-kaper/maketka" class="hover:text-mag transition" data-i18n="nav_github"></a>
         </nav>
@@ -47,7 +47,7 @@
   <section id="idea" class="mx-auto max-w-5xl px-5 pt-16 pb-10">
     <p class="text-xs text-dim mb-4">
       <span class="text-neon">~/maketka</span>
-      <span class="text-mag">$</span> cat idea.txt<span class="blink text-neon">▌</span>
+      <span class="text-mag">$</span> cat <a href="https://t-kaper.github.io/posts/breadboard_maketka/">idea.txt</a><span class="blink text-neon">▌</span>
     </p>
 
     <h1 class="text-3xl sm:text-5xl font-bold leading-tight tracking-tight" data-i18n="h1"></h1>
@@ -79,18 +79,19 @@
         </div>
 
         <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
-          <img data-img="s.png" alt="" class="w-full h-full object-contain p-3" />
+          <img data-img="small.png" alt="" class="w-full h-full object-contain p-3" />
         </div>
 
         <p class="text-xs text-slate-400 leading-relaxed" data-i18n="small_desc"></p>
 
         <div class="mt-5 space-y-2">
-          <a data-stl="STL/s.STL" download
+          <a data-stl="s.STL" download
              class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
             ↓ s.STL
           </a>
         </div>
       </article>
+
 
       <!-- ── Средний ── -->
       <article class="group rounded-xl border border-line bg-panel/70 p-5 hover:border-neon/50 hover:shadow-glow transition">
@@ -100,17 +101,17 @@
         </div>
 
         <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
-          <img data-img="m.png" alt="" class="w-full h-full object-contain p-3" />
+          <img data-img="medium.png" alt="" class="w-full h-full object-contain p-3" />
         </div>
 
         <p class="text-xs text-slate-400 leading-relaxed" data-i18n="medium_desc"></p>
 
         <div class="mt-5 space-y-2">
-          <a data-stl="STL/m.STL" download
+          <a data-stl="m.STL" download
              class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
             ↓ m.STL
           </a>
-          <a data-stl="STL/m_k.STL" download
+          <a data-stl="m_k.STL" download
              class="block text-center text-xs rounded-md border border-mag/40 text-mag py-2 hover:bg-mag/10 transition">
             ↓ m_k.STL <span class="text-dim">· ×2</span>
           </a>
@@ -125,17 +126,17 @@
         </div>
 
         <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
-          <img data-img="l.png" alt="" class="w-full h-full object-contain p-3" />
+          <img data-img="large.png" alt="" class="w-full h-full object-contain p-3" />
         </div>
 
         <p class="text-xs text-slate-400 leading-relaxed" data-i18n="large_desc"></p>
 
         <div class="mt-5 space-y-2">
-          <a data-stl="STL/l.STL" download
+          <a data-stl="l.STL" download
              class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
             ↓ l.STL
           </a>
-          <a data-stl="STL/l_k.STL" download
+          <a data-stl="l_k.STL" download
              class="block text-center text-xs rounded-md border border-mag/40 text-mag py-2 hover:bg-mag/10 transition">
             ↓ l_k.STL <span class="text-dim">· ×2</span>
           </a>
@@ -148,19 +149,39 @@
   </section>
 
   <!-- ─────────────────── доп. расширители / аксессуары ────────── -->
-  <section id="extras" class="mx-auto max-w-5xl px-5 pb-24">
+  <section id="extensions" class="mx-auto max-w-5xl px-5 pb-24">
     <div class="mb-6">
       <p class="text-xs text-dim mb-3">
         <span class="text-neon">~/maketka</span>
-        <span class="text-mag">$</span> ls extras/<span class="blink text-neon">▌</span>
+        <span class="text-mag">$</span> ls extensions/<span class="blink text-neon">▌</span>
       </p>
       <div class="flex items-end justify-between">
-        <h2 class="text-lg text-slate-200" data-i18n="extras_h2"></h2>
-        <span class="text-xs text-dim" data-i18n="extras_hint"></span>
+        <h2 class="text-lg text-slate-200" data-i18n="extensions_h2"></h2>
+        <span class="text-xs text-dim" data-i18n="extensions_hint"></span>
       </div>
     </div>
 
     <div class="grid gap-5 md:grid-cols-3">
+       <!-- ── Угловой переходник SS ── -->
+      <article class="group rounded-xl border border-line bg-panel/70 p-5 hover:border-neon/50 hover:shadow-glow transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-base text-slate-100" data-i18n="dop_ugl_ss_title"></h3>
+          <span class="text-[10px] uppercase tracking-widest text-dim">SS</span>
+        </div>
+
+        <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
+          <img data-img="small.png" alt="" class="w-full h-full object-contain p-3" />
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed" data-i18n="dop_ugl_desc"></p>
+
+        <div class="mt-5 space-y-2">
+          <a data-stl="dop_ugl_ss.STL" download
+             class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
+            ↓ dop_ugl_ss.STL
+          </a>
+        </div>
+      </article>
 
       <!-- ── Угловой переходник S ── -->
       <article class="group rounded-xl border border-line bg-panel/70 p-5 hover:border-neon/50 hover:shadow-glow transition">
@@ -170,13 +191,13 @@
         </div>
 
         <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
-          <img data-img="dop_ugl_s.png" alt="" class="w-full h-full object-contain p-3" />
+          <img data-img="small.png" alt="" class="w-full h-full object-contain p-3" />
         </div>
 
         <p class="text-xs text-slate-400 leading-relaxed" data-i18n="dop_ugl_desc"></p>
 
         <div class="mt-5 space-y-2">
-          <a data-stl="STL/dop_ugl_s.STL" download
+          <a data-stl="dop_ugl_s.STL" download
              class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
             ↓ dop_ugl_s.STL
           </a>
@@ -191,18 +212,20 @@
         </div>
 
         <div class="mt-5 mb-6 h-36 rounded-lg border border-line/40 bg-ink/30 overflow-hidden">
-          <img data-img="dop_ugl_m.png" alt="" class="w-full h-full object-contain p-3" />
+          <img data-img="medium.png" alt="" class="w-full h-full object-contain p-3" />
         </div>
 
         <p class="text-xs text-slate-400 leading-relaxed" data-i18n="dop_ugl_desc"></p>
 
         <div class="mt-5 space-y-2">
-          <a data-stl="STL/dop_ugl_m.STL" download
+          <a data-stl="dop_ugl_m.STL" download
              class="block text-center text-sm rounded-md border border-neon/50 text-neon py-2 hover:bg-neon/10 transition">
             ↓ dop_ugl_m.STL
           </a>
         </div>
       </article>
+
+
 
     </div>
   </section>
@@ -248,9 +271,11 @@
             <span class="text-xs text-slate-400" data-i18n="br_g_i15"></span>
           </div>
           <div class="flex flex-wrap gap-1.5">
-            <a data-stl="STL/br_15_30.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×30</a>
-            <a data-stl="STL/br_15_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×45</a>
-            <a data-stl="STL/br_15_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×60</a>
+            <a data-stl="br_15_30.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×30</a>
+            <a data-stl="br_15_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×45</a>
+            <a data-stl="br_15_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×60</a>
+            <a data-stl="br_15_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×90</a>
+            <a data-stl="br_15_180.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 15×180</a>
           </div>
         </div>
 
@@ -261,11 +286,49 @@
             <span class="text-xs text-slate-400" data-i18n="br_g_i30"></span>
           </div>
           <div class="flex flex-wrap gap-1.5">
-            <a data-stl="STL/br_30.STL"    download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30</a>
-            <a data-stl="STL/br_30_30.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×30</a>
-            <a data-stl="STL/br_30_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×45</a>
-            <a data-stl="STL/br_30_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×60</a>
-            <a data-stl="STL/br_30_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×90</a>
+            <a data-stl="br_30.STL"    download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30</a>
+            <a data-stl="br_30_30.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×30</a>
+            <a data-stl="br_30_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×45</a>
+            <a data-stl="br_30_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×60</a>
+            <a data-stl="br_30_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×90</a>
+            <a data-stl="br_30_180.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 30×180</a>
+          </div>
+        </div>
+
+        <!-- I — прямые, ширина 60 мм -->
+        <div class="rounded-lg border border-line bg-panel/50 px-4 py-3">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-[9px] uppercase tracking-widest text-dim border border-line/70 rounded px-1.5 py-0.5">I · w·60</span>
+            <span class="text-xs text-slate-400" data-i18n="br_g_i60"></span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <a data-stl="br_60_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 60×45</a>
+            <a data-stl="br_60_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 60×60</a>
+          </div>
+        </div>
+
+        <!-- I — прямые, ширина 90 мм -->
+        <div class="rounded-lg border border-line bg-panel/50 px-4 py-3">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-[9px] uppercase tracking-widest text-dim border border-line/70 rounded px-1.5 py-0.5">I · w·90</span>
+            <span class="text-xs text-slate-400" data-i18n="br_g_i90"></span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <a data-stl="br_90_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 90×45</a>
+            <a data-stl="br_90_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 90×60</a>
+          </div>
+        </div>
+
+        <!-- I — прямые, ширина 180 мм -->
+        <div class="rounded-lg border border-line bg-panel/50 px-4 py-3">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-[9px] uppercase tracking-widest text-dim border border-line/70 rounded px-1.5 py-0.5">I · w·180</span>
+            <span class="text-xs text-slate-400" data-i18n="br_g_i180"></span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <a data-stl="br_180_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 180×60</a>
+            <a data-stl="br_180_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 180×90</a>
+            <a data-stl="br_180_180.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 180×180</a>
           </div>
         </div>
 
@@ -276,7 +339,8 @@
             <span class="text-xs text-slate-400" data-i18n="br_g_l"></span>
           </div>
           <div class="flex flex-wrap gap-1.5">
-            <a data-stl="STL/br_L_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ Г·60</a>
+            <a data-stl="br_L_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ Г·45</a>
+            <a data-stl="br_L_60.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ Г·60</a>
           </div>
         </div>
 
@@ -287,8 +351,8 @@
             <span class="text-xs text-slate-400" data-i18n="br_g_node"></span>
           </div>
           <div class="flex flex-wrap gap-1.5">
-            <a data-stl="STL/br_t_90_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ Т·90/45</a>
-            <a data-stl="STL/br_x_90_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ ✕·90×90</a>
+            <a data-stl="br_t_90_45.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ Т·90/45</a>
+            <a data-stl="br_x_90_90.STL" download class="px-2.5 py-1 text-[11px] rounded border border-mag/40 text-mag hover:bg-mag/10 transition">↓ ✕·90×90</a>
           </div>
         </div>
 
@@ -299,8 +363,8 @@
             <span class="text-xs text-slate-400" data-i18n="br_g_sq"></span>
           </div>
           <div class="flex flex-wrap gap-1.5">
-            <a data-stl="STL/kr60_60.STL"   download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 60×60</a>
-            <a data-stl="STL/kr180_180.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 180×180</a>
+            <a data-stl="kr60_60.STL"   download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 60×60</a>
+            <a data-stl="kr180_180.STL" download class="px-2.5 py-1 text-[11px] rounded border border-neon/40 text-neon hover:bg-neon/10 transition">↓ 180×180</a>
           </div>
         </div>
 

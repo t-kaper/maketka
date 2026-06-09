@@ -4,7 +4,9 @@
 // (data-stl), а форма, размеры и отверстия считаются здесь. Деталь плоская и
 // лежит на сетке 15 мм, поэтому её достаточно описать набором ячеек 15×15.
 
-const STL_BASE = 'https://github.com/t-kaper/maketka/tree/main/3D_Models/STL/'
+// STL-файлы хранятся в Git LFS; GitHub Pages не раздаёт LFS-объекты,
+// поэтому используем raw-URL GitHub, который резолвит LFS корректно.
+const STL_BASE = 'https://github.com/t-kaper/maketka/raw/main/3D_Models/STL/'
 const CELL = 15 // мм — шаг крепёжной сетки
 
 // ── палитра (повтор токенов из style.css, нужны как явные цвета в SVG) ──
@@ -68,13 +70,25 @@ const list = [
   entry('br_15_30.STL', 'I', 'neon', 'I · 15×30', I(15, 30)),
   entry('br_15_45.STL', 'I', 'neon', 'I · 15×45', I(15, 45)),
   entry('br_15_60.STL', 'I', 'neon', 'I · 15×60', I(15, 60)),
+  entry('br_15_90.STL', 'I', 'neon', 'I · 15×90', I(15, 90)),
+  entry('br_15_180.STL', 'I', 'neon', 'I · 15×180', I(15, 180)),
   // I — прямые, ширина 30 мм (жёсткая)
   entry('br_30.STL',    'I', 'neon', 'I · 30',    I(30, 30)),
   entry('br_30_30.STL', 'I', 'neon', 'I · 30×30', I(30, 30)),
   entry('br_30_45.STL', 'I', 'neon', 'I · 30×45', I(30, 45)),
   entry('br_30_60.STL', 'I', 'neon', 'I · 30×60', I(30, 60)),
   entry('br_30_90.STL', 'I', 'neon', 'I · 30×90', I(30, 90)),
+  entry('br_30_180.STL', 'I', 'neon', 'I · 30×180', I(30, 180)),
+  // I — прямые, широкие накладки
+  entry('br_60_45.STL', 'I', 'neon', 'I · 60×45', I(60, 45)),
+  entry('br_60_60.STL', 'I', 'neon', 'I · 60×60', I(60, 60)),
+  entry('br_90_45.STL', 'I', 'neon', 'I · 90×45', I(90, 45)),
+  entry('br_90_60.STL', 'I', 'neon', 'I · 90×60', I(90, 60)),
+  entry('br_180_60.STL', 'I', 'neon', 'I · 180×60', I(180, 60)),
+  entry('br_180_90.STL', 'I', 'neon', 'I · 180×90', I(180, 90)),
+  entry('br_180_180.STL', 'I', 'neon', 'I · 180×180', I(180, 180)),
   // Г — угол 90°, ширина 30 мм
+  entry('br_L_45.STL',    'L', 'mag', 'Г · 45×45', L(45)),
   entry('br_L_60.STL',    'L', 'mag', 'Г · 60×60', L(60)),
   // Т / ✕ — узлы
   entry('br_t_90_45.STL', 'T', 'mag', 'Т · 90/45', T(90, 45)),

@@ -5,7 +5,9 @@ import { resources } from './i18n.js'
 import { initBrackets } from './brackets.js'
 
 const BASE = import.meta.env.BASE_URL // './' — пути относительные
-const STL_BASE = 'https://github.com/t-kaper/maketka/tree/main/3D_Models/STL/'
+// STL-файлы хранятся в Git LFS; GitHub Pages не раздаёт LFS-объекты,
+// поэтому используем raw-URL GitHub, который резолвит LFS корректно.
+const STL_BASE = 'https://github.com/t-kaper/maketka/raw/main/3D_Models/STL/'
 
 // Ссылки на STL строим от base-пути, чтобы работало на /maketka/ и локально.
 function applyStlLinks() {
